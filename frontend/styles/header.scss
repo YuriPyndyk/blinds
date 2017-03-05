@@ -1,0 +1,57 @@
+.header {
+  max-width: 1200px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container-head {
+  display: flex;
+  justify-content: space-between;
+}
+.phone-number {
+  font-size: 26px;
+}
+.phone {
+  text-decoration: none;
+  font-size: 20px;
+}
+.logo {
+  display: block;
+  background: cadetblue url("images/logo.png") no-repeat;
+  width: 120px;
+  height: 86px;
+}
+.menu-head {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-head__item {
+  display: block;
+  background: $main_color url("images/header_icons.png") no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 7px;
+  border-radius: 20px;
+}
+.menu-head__item_login {
+  background-position: 8px 8px;
+}
+.menu-head__item_basket {
+  background-position: -45px 8px;
+}
+.menu-head__item_search {
+  background-position: -98px 8px;
+}
+.menu-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+}
+.menu-nav li{
+  font-size: 18px;
+  color: $main_color;
+  text-decoration: none;
+}

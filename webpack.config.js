@@ -52,10 +52,10 @@ module.exports = {
             ],
 
             // register custom helpers. May be either a function or a glob-pattern
-            helpers: {
-                nameOfHbsHelper: Function.prototype,
-                projectHelpers: path.join(process.cwd(), "app", "helpers", "*.helper.js")
-            },
+            // helpers: {
+            //     nameOfHbsHelper: Function.prototype,
+            //     projectHelpers: path.join(process.cwd(), "app", "helpers", "*.helper.js")
+            // },
 
             // hooks
             onBeforeSetup: function (Handlebars) {},
