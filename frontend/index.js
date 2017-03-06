@@ -26,5 +26,5 @@ const mySwiper = new Swiper ('.swiper-container', {
 const head = new Header();
 
 document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'header'));
-document.body.appendChild(mySwiper);
+//document.body.appendChild(mySwiper);
 

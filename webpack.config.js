@@ -6,12 +6,9 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin =require("html-webpack-plugin");
 const path = require("path");
 const HandlebarsPlugin = require("handlebars-webpack-plugin");
-//const swiper = require("swiper");
 
 module.exports = {
-    context: __dirname + '/frontend',
-
-    entry:  "./index.js",
+    entry: path.join(__dirname, "frontend", "index.js"),
 
     output: {
         path: 'public',
@@ -42,7 +39,7 @@ module.exports = {
             allChunks: true
         }),
         new HtmlWebpackPlugin({
-            template: '../view/index.handlebars'
+            template: path.join(__dirname, "view", "index.handlebars")
         }),
         new HandlebarsPlugin({
             entry: path.join(process.cwd(), "view", "index.handlebars"),
