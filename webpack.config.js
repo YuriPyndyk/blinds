@@ -6,6 +6,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin =require("html-webpack-plugin");
 const path = require("path");
 const HandlebarsPlugin = require("handlebars-webpack-plugin");
+//const swiper = require("swiper");
 
 module.exports = {
     context: __dirname + '/frontend',
@@ -52,10 +53,10 @@ module.exports = {
             ],
 
             // register custom helpers. May be either a function or a glob-pattern
-            // helpers: {
-            //     nameOfHbsHelper: Function.prototype,
-            //     projectHelpers: path.join(process.cwd(), "app", "helpers", "*.helper.js")
-            // },
+            helpers: {
+                nameOfHbsHelper: Function.prototype,
+                projectHelpers: path.join(process.cwd(), "app", "helpers", "*.helper.js")
+            },
 
             // hooks
             onBeforeSetup: function (Handlebars) {},
@@ -82,7 +83,7 @@ module.exports = {
         loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel?presets[]=es2015'
+            loader: 'babel?presets[]=es2015&presets[]=stage-0&presets[]=stage-1'
 
         },{
             test: /\.scss$/,
