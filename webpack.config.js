@@ -8,7 +8,9 @@ const path = require("path");
 const HandlebarsPlugin = require("handlebars-webpack-plugin");
 
 module.exports = {
-    entry: path.join(__dirname, "frontend", "index.js"),
+    entry: {
+        main: './frontend/index.js'
+    },
 
     output: {
         path: 'public',
@@ -39,9 +41,13 @@ module.exports = {
             allChunks: true
         }),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, "view", "index.handlebars")
+            chunks: ['main'],
+            filename: 'index.html',
+            template: path.join(__dirname, "view", "index.handlebars"),
+            inject: true
         }),
         new HandlebarsPlugin({
+            chunks: ['main'],
             entry: path.join(process.cwd(), "view", "index.handlebars"),
             output: path.join(process.cwd(), "public", "index.html"),
             data: require("./fixtures/index.json"),
@@ -99,6 +105,10 @@ module.exports = {
         },{
             test: /\.json$/,
             loader: 'json-loader'
+        },{
+            test: /\.html$/,
+            include:  path.resolve( __dirname, 'frontend', 'index'),
+            loader: 'html-loader'
         }]
     }
 };

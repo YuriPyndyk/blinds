@@ -8,9 +8,14 @@ function createElement(elem, data, className) {
     div.innerHTML = elem(data);
     return div;
 }
-const mySwiper = new Swiper ('.swiper-container', {
+
+let head = new Header();
+
+document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'header'));
+
+let mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
-    direction: 'vertical',
+    //direction: 'vertical',
     loop: true,
 
     // If we need pagination
@@ -23,8 +28,3 @@ const mySwiper = new Swiper ('.swiper-container', {
     // And if we need scrollbar
     scrollbar: '.swiper-scrollbar'
 });
-const head = new Header();
-
-document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'header'));
-//document.body.appendChild(mySwiper);
-
