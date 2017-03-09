@@ -1,7 +1,7 @@
 class Header {
 
     getTemplate() {
-        let template = require("../../view/layout/header.handlebars");
+        let template = require("../../view/layout/header.hbs");
         return template;
     }
     getJson() {

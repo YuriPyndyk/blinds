@@ -43,12 +43,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             chunks: ['main'],
             filename: 'index.html',
-            template: path.join(__dirname, "view", "index.handlebars"),
+            template: path.join(__dirname, "view", "index.hbs"),
             inject: true
         }),
         new HandlebarsPlugin({
             chunks: ['main'],
-            entry: path.join(process.cwd(), "view", "index.handlebars"),
+            entry: path.join(process.cwd(), "view", "index.hbs"),
             output: path.join(process.cwd(), "public", "index.html"),
             data: require("./fixtures/index.json"),
             partials: [
@@ -83,6 +83,11 @@ module.exports = {
     },
 
     module: {
+        htmlLoader: {
+            ignoreCustomFragments: [/\{\{.*?}}/],
+            root: path.resolve(__dirname, 'index'),
+            attrs: ['img:src', 'link:href']
+        },
         loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
@@ -100,15 +105,14 @@ module.exports = {
             test: /\.(png|jpg|gif|ttf|eot|woff|woff2)$/,
             loader: 'file?name=[path][name].[ext]'
         },{
-            test:  /\.handlebars$/,
-            loader: 'handlebars-loader'
+            test: /\.hbs$/,
+            loader: "handlebars-template-loader",
+            query: {
+                attributes: ['img:src', 'x-img:src']
+            }
         },{
             test: /\.json$/,
             loader: 'json-loader'
-        },{
-            test: /\.html$/,
-            include:  path.resolve( __dirname, 'frontend', 'index'),
-            loader: 'html-loader'
         }]
     }
 };
