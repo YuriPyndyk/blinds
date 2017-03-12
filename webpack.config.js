@@ -2,10 +2,11 @@
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const HtmlWebpackPlugin =require("html-webpack-plugin");
-const path = require("path");
-const HandlebarsPlugin = require("handlebars-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin =require('html-webpack-plugin');
+const path = require('path');
+const HandlebarsPlugin = require('handlebars-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -68,7 +69,12 @@ module.exports = {
             onBeforeRender: function (Handlebars, data) {},
             onBeforeSave: function (Handlebars, resultHtml) {},
             onDone: function (Handlebars) {}
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: 'frontend/images', to: 'images'
+            }
+        ])
     ],
 
     resolve: {
@@ -103,7 +109,7 @@ module.exports = {
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         },{
             test: /\.(png|jpg|gif|ttf|eot|woff|woff2)$/,
-            loader: 'file?name=[path][name].[ext]'
+            loader: 'file?name=images/[name].[ext]'
         },{
             test: /\.hbs$/,
             loader: "handlebars-template-loader",
