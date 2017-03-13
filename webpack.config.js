@@ -128,7 +128,6 @@ module.exports = {
         port: 8080,
         contentBase: 'public',
         inline: true,
-        stats: '_errors-only_',
         hot: true,
         historyApiFallback: true
     }
