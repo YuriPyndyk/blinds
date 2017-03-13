@@ -1,14 +1,16 @@
 'use strict';
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const browserSyncPlugin = require('browser-sync-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin =require('html-webpack-plugin');
+const extractTextPlugin = require('extract-text-webpack-plugin');
+const htmlWebpackPlugin =require('html-webpack-plugin');
 const path = require('path');
-const HandlebarsPlugin = require('handlebars-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const handlebarsPlugin = require('handlebars-webpack-plugin');
+const copyWebpackPlugin = require('copy-webpack-plugin');
+const webpackDevServer = require('webpack-dev-server');
 
 module.exports = {
+    
     entry: {
         main: './frontend/index.js'
     },
@@ -28,26 +30,26 @@ module.exports = {
     devtool: NODE_ENV == 'development' ? "source-map" : null,
 
     plugins: [
-        new BrowserSyncPlugin({
-            host: 'localhost',
-            port: 3000,
-            server: { baseDir: ['public'] }
-        }),
+        // new browserSyncPlugin({
+        //     host: 'localhost',
+        //     port: 3000,
+        //     server: { baseDir: ['public'] }
+        // }),
         new webpack.NoErrorsPlugin(),
         new webpack.DefinePlugin({
             NODE_ENV: JSON.stringify(NODE_ENV),
             LANG:     JSON.stringify('ru')
         }),
-        new ExtractTextPlugin('styles.css', {
+        new extractTextPlugin('styles.css', {
             allChunks: true
         }),
-        new HtmlWebpackPlugin({
+        new htmlWebpackPlugin({
             chunks: ['main'],
             filename: 'index.html',
             template: path.join(__dirname, "view", "index.hbs"),
             inject: true
         }),
-        new HandlebarsPlugin({
+        new handlebarsPlugin({
             chunks: ['main'],
             entry: path.join(process.cwd(), "view", "index.hbs"),
             output: path.join(process.cwd(), "public", "index.html"),
@@ -70,7 +72,7 @@ module.exports = {
             onBeforeSave: function (Handlebars, resultHtml) {},
             onDone: function (Handlebars) {}
         }),
-        new CopyWebpackPlugin([
+        new copyWebpackPlugin([
             {
                 from: 'frontend/images', to: 'images'
             }
@@ -102,11 +104,11 @@ module.exports = {
         },{
             test: /\.scss$/,
             include:  path.resolve( __dirname, 'frontend', 'styles'),
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!resolve-url!sass-loader?sourceMap')
+            loader: extractTextPlugin.extract('style-loader', 'css-loader!resolve-url!sass-loader?sourceMap')
         },{
             test: /\.css$/,
             include:  path.resolve( __dirname, 'frontend', 'styles', 'imports'),
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+            loader: extractTextPlugin.extract('style-loader', 'css-loader')
         },{
             test: /\.(png|jpg|gif|ttf|eot|woff|woff2)$/,
             loader: 'file?name=images/[name].[ext]'
@@ -120,6 +122,15 @@ module.exports = {
             test: /\.json$/,
             loader: 'json-loader'
         }]
+    },
+    devServer: {
+        host: 'localhost',
+        port: 8080,
+        contentBase: 'public',
+        inline: true,
+        stats: '_errors-only_',
+        hot: true,
+        historyApiFallback: true
     }
 };
 

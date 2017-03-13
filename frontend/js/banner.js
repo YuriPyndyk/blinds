@@ -24,7 +24,7 @@ class Banner {
             prevButton: '.swiper-button-prev',
 
             // And if we need scrollbar
-            scrollbar: '.swiper-scrollbar'
+            // scrollbar: '.swiper-scrollbar'
         });
         return mySwiper;
     }
