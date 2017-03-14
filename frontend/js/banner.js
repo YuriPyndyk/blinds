@@ -18,10 +18,11 @@ class Banner {
 
             // If we need pagination
             pagination: '.swiper-pagination',
+            paginationClickable: true,
 
             // Navigation arrows
             nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
+            prevButton: '.swiper-button-prev'
 
             // And if we need scrollbar
             // scrollbar: '.swiper-scrollbar'
