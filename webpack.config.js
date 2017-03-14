@@ -125,7 +125,7 @@ module.exports = {
     },
     devServer: {
         host: 'localhost',
-        port: 8080,
+        port: 3000,
         contentBase: 'public',
         inline: true,
         stats: '_errors-only_',
