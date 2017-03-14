@@ -1,6 +1,7 @@
-import Header from '../frontend/js/header.js';
-import '../frontend/styles/styles.scss';
+import Header from '../frontend/js/header.js'
+import '../frontend/styles/styles.scss'
 import Banner from '../frontend/js/banner.js'
+import About from '../frontend/js/about.js'
 //import Swiper from '../frontend/js/swiper.js'
 
 function createElement(elem, data, className) {
@@ -11,9 +12,7 @@ function createElement(elem, data, className) {
 }
 
 let head = new Header();
-
 document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'header'));
-
 
 // let mySwiper = new Swiper ('.swiper-container', {
 //     // Optional parameters
@@ -30,6 +29,10 @@ document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'hea
 //     // And if we need scrollbar
 //     scrollbar: '.swiper-scrollbar'
 // });
+
 let banner = new Banner();
 document.body.appendChild(createElement(banner.getTemplate(), banner.getJson(), 'banner'));
 banner.getSwiper();
+
+let about = new About();
+document.body.appendChild(createElement(about.getTemplate(), about.getJson(), 'about'));
