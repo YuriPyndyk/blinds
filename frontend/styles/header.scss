@@ -5,6 +5,46 @@
   left: 0;
   z-index: 5;
 }
+.header-title {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: $main_text_color;
+}
+.header-title__content {
+  max-width: 100%;
+  margin: 290px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-title__content h1 {
+  font-size: 50px;
+}
+.header-title__content-1 {
+  margin: 0 auto;
+  font-size: 30px;
+}
+.header-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.header-button__catalog {
+  display: block;
+  height: 42px;
+  width: 160px;
+  border: 2px solid $main_color;
+  text-align:  center;
+  vertical-align: middle;
+}
+.header-button__portfolio {
+  display: block;
+  height: 42px;
+  width: 160px;
+  border: 2px solid $main_color;
+  text-align:  center;
+  vertical-align: middle;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,14 +57,17 @@
 }
 .phone-number {
   font-size: 26px;
+  color: $main_text_color;
 }
 .phone {
   text-decoration: none;
   font-size: 20px;
+  color: $main_text_color;
 }
 .logo {
   display: block;
   background: url("images/logo.png") no-repeat;
+  color: #272622;
   width: 120px;
   height: 86px;
 }
@@ -57,8 +100,11 @@
   justify-content: space-between;
   padding: 0px 50px 0px 100px;
 }
-.menu-nav li{
+.menu-nav li, a {
   font-size: 18px;
-  color: $main_color;
+  color: $main_text_color;
   text-decoration: none;
+}
+.menu-nav a:hover {
+  color: $main_color;
 }

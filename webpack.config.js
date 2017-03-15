@@ -1,5 +1,4 @@
 'use strict';
-const browserSyncPlugin = require('browser-sync-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 const extractTextPlugin = require('extract-text-webpack-plugin');
@@ -7,7 +6,6 @@ const htmlWebpackPlugin =require('html-webpack-plugin');
 const path = require('path');
 const handlebarsPlugin = require('handlebars-webpack-plugin');
 const copyWebpackPlugin = require('copy-webpack-plugin');
-const webpackDevServer = require('webpack-dev-server');
 
 module.exports = {
     
@@ -30,11 +28,6 @@ module.exports = {
     devtool: NODE_ENV == 'development' ? "source-map" : null,
 
     plugins: [
-        // new browserSyncPlugin({
-        //     host: 'localhost',
-        //     port: 3000,
-        //     server: { baseDir: ['public'] }
-        // }),
         new webpack.NoErrorsPlugin(),
         new webpack.DefinePlugin({
             NODE_ENV: JSON.stringify(NODE_ENV),
