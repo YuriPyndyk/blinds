@@ -6,8 +6,8 @@ import About from '../frontend/js/about.js'
 
 function createElement(elem, data, className) {
     let div = document.createElement('div');
-    div.className = className;
     div.innerHTML = elem(data);
+    div.className = className;
     return div;
 }
 

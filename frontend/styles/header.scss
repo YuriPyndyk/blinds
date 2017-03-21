@@ -33,6 +33,7 @@
 }
 .logo:hover {
   background: url("images/logo_hover.png") no-repeat;
+  transform: scale(1.05, 1.05);
 }
 .menu-head {
   display: flex;
