@@ -1,20 +1,50 @@
 .quote {
-  height: 100vh;
+  min-height: 700px;
   width: auto;
-  background: url("images/quote.png") 0 -20px no-repeat;
-}
-.quote__container {
-  height: auto;
-  width: auto;
+  background: url("images/quote.png") 0 -10px no-repeat;
+  background-size: cover;
   display: flex;
 }
-.quote__content {
+.quote__container {
   margin: auto;
-  align-items: center;
-  color: $main_text_color;
+  text-align: center;
 }
 .quote__title {
-  //margin: 0;
-  //font-weight: bold;
-  //font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: 45px;
+  color: $main_text_color;
+}
+.quote__title:last-of-type {
+  margin-bottom: 40px;
+}
+.quote__stock {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.quote__stock:before {
+  height: 3px;
+  width: 50px;
+  position: absolute;
+  top: -20px;
+  content: "";
+  background-color: $main_color;
+}
+.quote__more {
+  min-width: 160px;
+  padding: 10px 0 10px 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 2px solid white;
+}
+.quote__more:hover {
+  background-color: $main_color;
 }
