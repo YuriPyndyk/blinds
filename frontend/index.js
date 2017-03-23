@@ -2,6 +2,9 @@ import Header from '../frontend/js/header.js'
 import '../frontend/styles/styles.scss'
 import Banner from '../frontend/js/banner.js'
 import About from '../frontend/js/about.js'
+import Quote from '../frontend/js/quote.js'
+import Team from '../frontend/js/team.js'
+import Facts from '../frontend/js/facts.js'
 //import Swiper from '../frontend/js/swiper.js'
 
 function createElement(elem, data, className) {
@@ -36,3 +39,13 @@ banner.getSwiper();
 
 let about = new About();
 document.body.appendChild(createElement(about.getTemplate(), about.getJson(), 'about'));
+
+let quote = new Quote();
+document.body.appendChild(createElement(quote.getTemplate(), quote.getJson(), 'quote'));
+
+let team = new Team();
+document.body.appendChild(createElement(team.getTemplate(), team.getJson(), 'team'));
+team.getSwiper();
+
+let facts = new Facts();
+document.body.appendChild(createElement(facts.getTemplate(), facts.getJson(), 'facts'));

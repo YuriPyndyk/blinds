@@ -1,0 +1,20 @@
+.quote {
+  height: 100vh;
+  width: auto;
+  background: url("images/quote.png") 0 -20px no-repeat;
+}
+.quote__container {
+  height: auto;
+  width: auto;
+  display: flex;
+}
+.quote__content {
+  margin: auto;
+  align-items: center;
+  color: $main_text_color;
+}
+.quote__title {
+  //margin: 0;
+  //font-weight: bold;
+  //font-size: 25px;
+}
