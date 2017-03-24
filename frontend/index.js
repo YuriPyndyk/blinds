@@ -35,7 +35,7 @@ document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'hea
 
 let banner = new Banner();
 document.body.appendChild(createElement(banner.getTemplate(), banner.getJson(), 'banner'));
-banner.getSwiper();
+banner.getSwiperBanner();
 
 let about = new About();
 document.body.appendChild(createElement(about.getTemplate(), about.getJson(), 'about'));
@@ -45,7 +45,7 @@ document.body.appendChild(createElement(quote.getTemplate(), quote.getJson(), 'q
 
 let team = new Team();
 document.body.appendChild(createElement(team.getTemplate(), team.getJson(), 'team'));
-team.getSwiper();
+team.getSwiperTeam();
 
 let facts = new Facts();
 document.body.appendChild(createElement(facts.getTemplate(), facts.getJson(), 'facts'));

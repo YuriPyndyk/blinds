@@ -10,13 +10,13 @@ class Banner {
         return json;
     }
 
-    getSwiper() {
-        const mySwiper = new Swiper ('.swiper-container', {
+    getSwiperBanner() {
+        const swiperBanner = new Swiper ('.swiper-container', {
             loop: true,
             pagination: '.swiper-pagination',
             paginationClickable: true
         });
-        return mySwiper;
+        return swiperBanner;
     }
 }
 export default Banner;

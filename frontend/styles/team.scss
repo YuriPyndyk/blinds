@@ -1,3 +1,16 @@
 .team__description {
   text-align: center;
 }
+.team__description p {
+  padding-bottom: 20px;
+}
+.team__description p:nth-child(1) {
+  padding-top: 20px;
+}
+.slide_team {
+  width: 194px;
+  height: 194px;
+  background-color: #00cc99;
+  padding-right: 20px;
+  padding-left: 20px;
+}

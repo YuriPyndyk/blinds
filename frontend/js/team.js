@@ -7,13 +7,13 @@ class Team {
         let json = require("../../fixtures/index.json");
         return json;
     }
-    getSwiper() {
-        const mySwiper = new Swiper ('.swiper-container', {
+    getSwiperTeam() {
+        const swiperTeam = new Swiper ('.swiper-container', {
             loop: true,
-            pagination: '.swiper-pagination',
-            paginationClickable: true
+            slidesPerView: 6,
+            spaceBetween: 30
         });
-        return mySwiper;
+        return swiperTeam;
     }
 }
 
