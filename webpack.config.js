@@ -132,7 +132,6 @@ module.exports = {
         historyApiFallback: true
     }
 };
-
 if (NODE_ENV == 'production') {
     module.exports.plugins.push(
         new webpack.optimize.UglifyJsPlugin({
