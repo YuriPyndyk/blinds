@@ -1,0 +1,28 @@
+.facts {
+  min-height: 700px;
+  width: auto;
+  background: url("images/facts.png") 0 0 no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.facts-list {
+  display: flex;
+  margin: auto;
+  height: 100%;
+}
+.facts-list__items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: $main_text_color;
+}
+.facts-list__link {
+  background: url("images/facts_icons.png") 82px 82px no-repeat;
+  width: 200px;
+  height: 200px;
+  border: 2px solid $main_color;
+  border-radius: 100px;
+}
