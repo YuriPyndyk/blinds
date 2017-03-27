@@ -2,7 +2,30 @@ body {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
 }
-p, ul {
+p, ul, h1, a {
   margin: 0;
   padding: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.info__container {
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+}
+.info__title {
+  white-space: nowrap;
+  text-transform: uppercase;
+  border-right: 4px solid $main_color;
+  padding: 0 20px 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.info__content {
+  text-transform: uppercase;
+  padding-left: 18px;
+  font-size: 16px;
+  color: $two_text_color;
 }

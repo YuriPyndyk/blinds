@@ -1,0 +1,63 @@
+.about {
+  margin-top: -111px;
+  background: url("images/about_background_1.png") 0 14% no-repeat,
+              url("images/about_background_2.png") 100% 0 no-repeat,
+              url("images/about_background_3.png") 100% 100% no-repeat;
+}
+.about-background_2 {
+  background: url("images/about_background_2.png") 0 -90px no-repeat;
+}
+.about-background_3 {
+  background: url("images/about_background_3.png") 100% 100% no-repeat;
+}
+.benefits__container {
+  display: flex;
+  padding-top: 100px;
+}
+.benefits_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+.benefits_list__item {
+  width: 25%;
+}
+.bulb {
+  margin: 0 auto 31px auto;
+  height: 125px;
+  width: 125px;
+  background: url("images/bulb.png") 50% 50% no-repeat;
+  border: 2px solid $main_color;
+  border-radius: 62.5px;
+}
+.bulb_title {
+  display: inline-flex;
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+}
+.bulb_content {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+.skills__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.skills__content {
+  width: 50%;
+}
+.skills__title {
+  text-transform: uppercase;
+}
+.skills__content p {
+  line-height: 1.5;
+  color: $two_text_color;
+}
+.skills__content p:last-child {
+  padding-top: 20px;
+}
