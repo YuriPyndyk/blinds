@@ -5,7 +5,6 @@ import About from '../frontend/js/about.js'
 import Quote from '../frontend/js/quote.js'
 import Team from '../frontend/js/team.js'
 import Facts from '../frontend/js/facts.js'
-//import Swiper from '../frontend/js/swiper.js'
 
 function createElement(elem, data, className) {
     let div = document.createElement('div');
@@ -16,22 +15,6 @@ function createElement(elem, data, className) {
 
 let head = new Header();
 document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'header'));
-
-// let mySwiper = new Swiper ('.swiper-container', {
-//     // Optional parameters
-//     //direction: 'vertical',
-//     loop: true,
-//
-//     // If we need pagination
-//     pagination: '.swiper-pagination',
-//
-//     // Navigation arrows
-//     nextButton: '.swiper-button-next',
-//     prevButton: '.swiper-button-prev',
-//
-//     // And if we need scrollbar
-//     scrollbar: '.swiper-scrollbar'
-// });
 
 let banner = new Banner();
 document.body.appendChild(createElement(banner.getTemplate(), banner.getJson(), 'banner'));

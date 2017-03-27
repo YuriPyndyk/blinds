@@ -11,7 +11,7 @@ class Banner {
     }
 
     getSwiperBanner() {
-        const swiperBanner = new Swiper ('.swiper-container', {
+        let swiperBanner = new Swiper ('.swiper-container', {
             loop: true,
             pagination: '.swiper-pagination',
             paginationClickable: true

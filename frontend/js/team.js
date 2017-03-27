@@ -8,9 +8,10 @@ class Team {
         return json;
     }
     getSwiperTeam() {
-        const swiperTeam = new Swiper ('.swiper-container', {
+        let swiperTeam = new Swiper ('.swiper-container-team', {
             loop: true,
             slidesPerView: 6,
+            centeredSlides: true,
             spaceBetween: 30
         });
         return swiperTeam;
