@@ -5,10 +5,17 @@
   background-size: cover;
   display: flex;
 }
+.facts-list__container {
+  margin: auto;
+  width: 100%;
+}
 .facts-list {
   display: flex;
   margin: auto;
   height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .facts-list__items {
   list-style: none;
@@ -18,6 +25,7 @@
   text-align: center;
   align-items: center;
   color: $main_text_color;
+  max-width: 300px;
 }
 .facts-list__link {
   background: url("images/facts_icons.png") 82px 82px no-repeat;
