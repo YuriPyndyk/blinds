@@ -5,6 +5,7 @@ import About from '../frontend/js/about.js'
 import Quote from '../frontend/js/quote.js'
 import Team from '../frontend/js/team.js'
 import Facts from '../frontend/js/facts.js'
+import Service from '../frontend/js/sevice'
 
 function createElement(elem, data, className) {
     let div = document.createElement('div');
@@ -32,3 +33,6 @@ team.getSwiperTeam();
 
 let facts = new Facts();
 document.body.appendChild(createElement(facts.getTemplate(), facts.getJson(), 'facts'));
+
+let service = new Service();
+document.body.appendChild(createElement(service.getTemplate(), service.getJson(), 'service'));
