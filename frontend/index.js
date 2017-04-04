@@ -14,7 +14,7 @@ function createElement(elem, data, className) {
 }
 
 let head = new Header();
-document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'header'));
+document.body.appendChild(createElement(head.getTemplate(head.pathTemplate), head.getJson(head.pathJson), 'header'));
 
 let banner = new Banner();
 document.body.appendChild(createElement(banner.getTemplate(), banner.getJson(), 'banner'));
