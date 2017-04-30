@@ -6,6 +6,7 @@ import Quote from '../frontend/js/quote.js'
 import Team from '../frontend/js/team.js'
 import Facts from '../frontend/js/facts.js'
 import Service from '../frontend/js/sevice'
+import Price from '../frontend/js/price'
 
 function createElement(elem, data, className) {
     let div = document.createElement('div');
@@ -36,3 +37,6 @@ document.body.appendChild(createElement(facts.getTemplate(), facts.getJson(), 'f
 
 let service = new Service();
 document.body.appendChild(createElement(service.getTemplate(), service.getJson(), 'service'));
+
+let price = new Price();
+document.body.appendChild(createElement(price.getTemplate(), price.getJson(), 'price'));
