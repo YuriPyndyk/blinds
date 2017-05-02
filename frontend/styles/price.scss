@@ -31,12 +31,15 @@
   border-right: 2px solid $main_color;
   width: 33.3%;
   box-sizing: border-box;
+  transition: all 0.3s;
 
 }
 .price-list__item-header {
 }
 .price-list__item-content {
-  background-color: cadetblue;
+  border-top: 2px solid #e6e6e6;
+  background-color: #fafafa;
+  transition: all 0.3s;
 }
 .price-list__item:last-child {
   border-right: 0;
@@ -67,6 +70,7 @@
   padding: 10px 0 10px 0;
   text-transform: uppercase;
   color: #000000;
+  transition: all 0.3s;
 }
 .price-list__item:hover {
   background-color: $main_color;
@@ -78,5 +82,8 @@
   color: #ffffff;
 }
 .price-list__item:hover .price-list__item-content {
-  background-color: darkgrey;
+  background: url("images/background_price.png") 0 0 no-repeat;
+}
+.price-list__item:hover .price-list__item-header {
+  color: #ffffff;
 }
