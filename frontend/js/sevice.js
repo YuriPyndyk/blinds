@@ -1,7 +1,6 @@
-class Header {
-    
+class Service {
     getTemplate() {
-        let template = require("../../view/layout/header.hbs");
+        let template = require("../../view/layout/service.hbs");
         return template;
     }
     getJson() {
@@ -10,4 +9,4 @@ class Header {
     }
 }
 
-export default Header;
+export default Service;
