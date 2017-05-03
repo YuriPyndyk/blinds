@@ -6,6 +6,8 @@ import Quote from '../frontend/js/quote.js'
 import Team from '../frontend/js/team.js'
 import Facts from '../frontend/js/facts.js'
 import Service from '../frontend/js/sevice'
+import Price from '../frontend/js/price'
+import Imoniol from '../frontend/js/imoniol'
 
 function createElement(elem, data, tagName, className) {
     let tag = document.createElement(tagName);
@@ -14,25 +16,32 @@ function createElement(elem, data, tagName, className) {
     return tag;
 }
 
-let head = new Header();
+const head = new Header();
 document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'header', 'header'));
 
-let banner = new Banner();
+const banner = new Banner();
 document.body.appendChild(createElement(banner.getTemplate(), banner.getJson(), 'div', 'banner'));
 banner.getSwiperBanner();
 
-let about = new About();
+const about = new About();
 document.body.appendChild(createElement(about.getTemplate(), about.getJson(), 'div', 'about'));
 
-let quote = new Quote();
+const quote = new Quote();
 document.body.appendChild(createElement(quote.getTemplate(), quote.getJson(), 'div', 'quote'));
 
-let team = new Team();
+const team = new Team();
 document.body.appendChild(createElement(team.getTemplate(), team.getJson(), 'div', 'team'));
 team.getSwiperTeam();
 
-let facts = new Facts();
+const facts = new Facts();
 document.body.appendChild(createElement(facts.getTemplate(), facts.getJson(), 'div', 'facts'));
 
-let service = new Service();
+const service = new Service();
 document.body.appendChild(createElement(service.getTemplate(), service.getJson(), 'div', 'service'));
+
+const price = new Price();
+document.body.appendChild(createElement(price.getTemplate(), price.getJson(),'div', 'price'));
+
+const imoniol = new Imoniol();
+document.body.appendChild(createElement(imoniol.getTemplate(), imoniol.getJson(), 'div', 'imoniol'));
+imoniol.getSwiperImoniol();
