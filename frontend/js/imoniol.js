@@ -9,7 +9,7 @@ class Imoniol {
     }
     getSwiperImoniol() {
         let swiperImoniol = new Swiper ('.swiper-container-imoniol', {
-            pagination: '.swiper-pagination',
+            pagination: '.swiper-pagination-imoniol',
             paginationClickable: true
         });
         return swiperImoniol;

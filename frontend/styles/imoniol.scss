@@ -1,3 +1,8 @@
+.swiper-container-imoniol {
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
 .imoniol {
   min-height: 700px;
   width: auto;
@@ -7,10 +12,36 @@
   flex-direction: column;
 }
 .imoniol__container {
-  display: flex;
-  min-width: 700px;
   text-align: center;
 }
 .imoniol__name {
-
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: 45px;
+  color: $main_text_color;
+}
+.imoniol__content {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 22px;
+  color: $main_text_color;
+  padding-bottom: 27px;
+  margin-top: 65px;
+  position: relative;
+}
+.imoniol__content:before {
+  height: 3px;
+  width: 50px;
+  position: absolute;
+  top: -31px;
+  left: calc(50% - 25px);
+  content: "";
+  background-color: $main_color;
+}
+.swiper-pagination-imoniol {
+  padding-top: 27px;
 }
