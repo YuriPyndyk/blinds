@@ -3,17 +3,31 @@
   text-align: center;
   margin: auto;
 }
-.menu-nav___portfolio {
+.swiper-pagination-portfolio {
+  text-align: center;
+  padding: 40px 30px 15px;
   display: flex;
-  list-style: none;
+  box-sizing: border-box;
   justify-content: space-between;
-  padding: 0px 50px 0px 100px;
 }
-.menu-nav__link {
+.swiper-pagination-portfolio .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
   font-size: 18px;
-  color: $two_text_color;
-  text-decoration: none;
+  color: #4d4d4d;
+  background: transparent;
+  opacity: 1;
 }
-.menu-nav__portfolio a:hover {
+.swiper-pagination-portfolio .swiper-pagination-bullet:hover {
   color: $main_color;
+}
+.swiper-pagination-portfolio .swiper-pagination-bullet:after {
+  display: inline-block;
+  height: 18px;
+  width: 4px;
+  content: "\\\\";
+  margin-left: 20px;
+}
+.swiper-pagination-portfolio .swiper-pagination-bullet:last-child:after {
+  display: none;
 }
