@@ -1,0 +1,19 @@
+.swiper-container-portfolio {
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
+.menu-nav___portfolio {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+}
+.menu-nav__link {
+  font-size: 18px;
+  color: $two_text_color;
+  text-decoration: none;
+}
+.menu-nav__portfolio a:hover {
+  color: $main_color;
+}
