@@ -53,4 +53,4 @@ document.body.appendChild(createElement(portfolio.getTemplate(), portfolio.getJs
 portfolio.getSwiperPortfolio();
 
 const social = new Social();
-document.body.appendChild(createElement(social.getTemplate(), social.getJson(), 'div', 'social'));
+document.body.appendChild(createElement(social.getTemplate(), social.getJson(), 'div', 'social wrapper'));

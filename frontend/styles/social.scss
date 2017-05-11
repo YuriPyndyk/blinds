@@ -1,0 +1,13 @@
+.social {
+  background-color: #1c1c1c;
+}
+.social__content {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.social__content-item {
+  text-decoration: none;
+  color: #6c6c6c;
+  text-transform: uppercase;
+}

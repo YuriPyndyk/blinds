@@ -72,11 +72,14 @@
   list-style: none;
   justify-content: space-between;
   padding: 0 50px 0 100px;
-}
-.menu-nav li, a {
-  font-size: 18px;
-  color: $main_text_color;
-  text-decoration: none;
+  &__item {
+    font-size: 18px;
+    color: $main_text_color;
+  }
+  &__item a {
+    color: $main_text_color;
+    text-decoration: none;
+  }
 }
 .menu-nav a:hover, .phone:hover {
   color: $main_color;
