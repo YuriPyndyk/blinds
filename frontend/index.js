@@ -9,6 +9,7 @@ import Service from '../frontend/js/sevice'
 import Price from '../frontend/js/price'
 import Imoniol from '../frontend/js/imoniol'
 import Portfolio from '../frontend/js/portfolio'
+import Social from '../frontend/js/social'
 
 function createElement(elem, data, tagName, className) {
     let tag = document.createElement(tagName);
@@ -50,3 +51,6 @@ imoniol.getSwiperImoniol();
 const portfolio = new Portfolio();
 document.body.appendChild(createElement(portfolio.getTemplate(), portfolio.getJson(), 'div', 'portfolio'));
 portfolio.getSwiperPortfolio();
+
+const social = new Social();
+document.body.appendChild(createElement(social.getTemplate(), social.getJson(), 'div', 'social'));

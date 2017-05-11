@@ -9,13 +9,13 @@ class Portfolio {
     }
     
     getSwiperPortfolio() {
-        let arr = ["французкие шторы", "римские шторы", "шторы с ламбрекеном", 
+        let titleName = ["французкие шторы", "римские шторы", "шторы с ламбрекеном", 
             "австрийские шторы", "итальянские шторы", "английские шторы"];
         let swiperPortfolio = new Swiper ('.swiper-container-portfolio', {
             pagination: '.swiper-pagination-portfolio',
             paginationClickable: true,
             paginationBulletRender: function (swiper, index, className) {
-                return '<span class="' + className + '">' + arr[index] + '</span>';
+                return '<span class="' + className + '">' + titleName[index] + '</span>';
             }
         });
         return swiperPortfolio;
