@@ -17,6 +17,7 @@ function createElement(elem, data, tagName, className) {
     tag.className = className;
     return tag;
 }
+require('font-awesome/css/font-awesome.css');
 
 const head = new Header();
 document.body.appendChild(createElement(head.getTemplate(), head.getJson(), 'header', 'header'));
