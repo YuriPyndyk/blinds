@@ -1,0 +1,33 @@
+<div class="footer-heading wrapper">
+    <div class="footer-nav">
+        <ul class="footer-nav__item">
+            <li class="footer-nav__title">{{footerNav.titleAbout}}</li>
+            {{#each footerNav.about}}
+                <li class="footer-nav__link"><a href="">{{this}}</a></li>
+            {{/each}}
+        </ul>
+        <ul class="footer-nav__item">
+            <li class="footer-nav__title">{{footerNav.titlePortfolio}}</li>
+            {{#each footerNav.portfolio}}
+                <li class="footer-nav__link"><a href="">{{this}}</a></li>
+            {{/each}}
+        </ul>
+        <ul class="footer-nav__item">
+            <li class="footer-nav__title">{{footerNav.titleAboutBlinds}}</li>
+            {{#each footerNav.aboutBlinds}}
+                <li class="footer-nav__link"><a href="">{{this}}</a></li>
+            {{/each}}
+        </ul>
+        <ul class="footer-nav__item">
+            <li class="footer-nav__title">{{footerNav.titleContact}}</li>
+            {{#each footerNav.contact}}
+                <li class="footer-nav__link">{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <form class="footer-form"></form>
+</div>
+<div class="footer-text wrapper">
+    {{footerText}}
+</div>
+<div class="footer-copyright">{{footerCopyright}}</div>
