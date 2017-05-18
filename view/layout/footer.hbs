@@ -25,9 +25,14 @@
             {{/each}}
         </ul>
     </div>
-    <form class="footer-form"></form>
+    <form class="footer-form">
+        <span class="footer-form__title">{{formTitle}}</span>
+        <input type="text" class="footer-form__input" placeholder="Имя">
+        <input type="text" class="footer-form__input" placeholder="E-mail">
+        <a href="#" class="footer-form__send team__order">{{buttonSend}}</a>
+    </form>
 </div>
 <div class="footer-text wrapper">
-    {{footerText}}
+   <span>{{footerText}}</span>
 </div>
-<div class="footer-copyright">{{footerCopyright}}</div>
+<div class="footer-copyright">&#169; 2017</div>
