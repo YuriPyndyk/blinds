@@ -1,16 +1,19 @@
 {
   "phone": "+9 (999) 999-99-99",
   "callback": "заказать обратный звонок",
+  "about": "О нас",
+  "aboutBlinds": "Все о шторах",
+  "servicePrice": "услуги и цены",
+  "portfolio": "Портфолио",
+  "desiigner": "Дизайнеры",
+  "contact": "Контакты",
   "footerNav": {
     "titleAbout":"О компании",
     "about": ["3D дизайн штор", "Услуги и цены", "Пошив штор", "Все о шторах", "Карнизы для штор",
       "Контакты", "Карта сайта"],
-    "titlePortfolio": "Портфолио",
-    "portfolio": ["Дизайн штор", "Виды штор", "Стили штор", "Жилые зоны", "Ткани"],
-    "titleAboutBlinds": "Все о шторах",
-    "aboutBlinds": ["Виды штор", "Стили штор", "Жилые зоны", "Ткани для штор", "Щторы на заказ", "Наши партнеры"],
-    "titleContact": "Контакты",
-    "contact": ["Телефон: +9 (999) 999-03-05", "Почта: info@blinds.com", "Адресс: Город, Улица, №", "Город, Улица, №"]
+    "listPortfolio": ["Дизайн штор", "Виды штор", "Стили штор", "Жилые зоны", "Ткани"],
+    "allAboutBlinds": ["Виды штор", "Стили штор", "Жилые зоны", "Ткани для штор", "Щторы на заказ", "Наши партнеры"],
+    "listContact": ["Телефон: +9 (999) 999-03-05", "Почта: info@blinds.com", "Адресс: Город, Улица, №", "Город, Улица, №"]
   },
   "formTitle": "подпишитесь на наши новости",
   "footerText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",

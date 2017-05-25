@@ -15,21 +15,22 @@
   justify-content: center;
   padding: 50px 0;
   margin-bottom: 60px;
-}
-.banner-button__catalog, .banner-button__portfolio {
-  display: inline-block;
-  text-decoration: none;
-  border: 2px solid $main_color;
-  text-align: center;
-  min-width: 180px;
-  padding: 10px 0 10px 0;
-  text-transform: uppercase;
-}
-.banner-button__catalog {
-  margin-right: 30px;
-}
-.banner-button__catalog:hover, .banner-button__portfolio:hover {
-  background-color: $main_color;
+  &__item {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid $main_color;
+    text-align: center;
+    min-width: 180px;
+    padding: 10px 0 10px 0;
+    text-transform: uppercase;
+    color: white;
+    &:first-child {
+      margin-right: 30px;
+    }
+    &:hover {
+      background-color: $main_color;
+    }
+  }
 }
 .slide__banner {
   height: 100vh;

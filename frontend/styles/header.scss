@@ -21,6 +21,9 @@
   text-decoration: none;
   font-size: 20px;
   color: $main_text_color;
+  &:hover {
+    color: $main_color;
+  }
 }
 .logo {
   display: block;
@@ -28,10 +31,10 @@
   color: #272622;
   width: 120px;
   height: 86px;
-}
-.logo:hover {
-  background: url("images/logo_hover.png") no-repeat;
-  transform: scale(1.05, 1.05);
+  &:hover {
+    background: url("images/logo_hover.png") no-repeat;
+    transform: scale(1.05, 1.05);
+  }
 }
 .menu-head {
   display: flex;
@@ -47,24 +50,22 @@
     border-radius: 20px;
     &_login {
       background-position: 8px 8px;
+      &:hover {
+        background: $main_color url("images/header_icons_hover.png") 8px 8px no-repeat;
+      }
     }
     &_basket {
       background-position: -45px 8px;
+      &:hover {
+        background: $main_color url("images/header_icons_hover.png")-45px 8px no-repeat;
+      }
     }
     &_search {
       background-position: -98px 8px;
+      &:hover {
+        background:  $main_color url("images/header_icons_hover.png")-98px 8px no-repeat;
+      }
     }
-  }
-}
-.menu-head__item {
-  &_login:hover {
-    background: $main_color url("images/header_icons_hover.png") 8px 8px no-repeat;
-  }
-  &_basket:hover {
-    background: $main_color url("images/header_icons_hover.png")-45px 8px no-repeat;
-  }
-  &_search:hover {
-    background:  $main_color url("images/header_icons_hover.png")-98px 8px no-repeat;
   }
 }
 .menu-nav {
@@ -72,6 +73,7 @@
   list-style: none;
   justify-content: space-between;
   padding: 0 50px 0 100px;
+  text-transform: lowercase;
   &__item {
     font-size: 18px;
     color: $main_text_color;
@@ -80,7 +82,7 @@
     color: $main_text_color;
     text-decoration: none;
   }
-}
-.menu-nav a:hover, .phone:hover {
-  color: $main_color;
+  & a:hover {
+    color: $main_color;
+  }
 }
