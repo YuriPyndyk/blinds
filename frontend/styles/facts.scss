@@ -16,21 +16,38 @@
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
-}
-.facts-list__items {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  color: $main_text_color;
-  max-width: 250px;
-}
-.facts-list__link {
-  background: url("images/facts_icons.png") 82px 82px no-repeat;
-  width: 200px;
-  height: 200px;
-  border: 2px solid $main_color;
-  border-radius: 100px;
+  &__items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: $main_text_color;
+    max-width: 250px;
+    &:nth-child(1) a {
+      background: url("images/facts_icons.png") 82px 82px no-repeat;
+      &:hover {
+        background: url("images/facts_icons_hover.png") 82px 82px no-repeat;
+      }
+    }
+    &:nth-child(2) a {
+      background: url("images/facts_icons.png") -250px 82px no-repeat;
+      &:hover {
+        background: url("images/facts_icons_hover.png") -250px 82px no-repeat;
+      }
+    }
+    &:nth-child(3) a {
+      background: url("images/facts_icons.png") -580px 82px no-repeat;
+      &:hover {
+        background: url("images/facts_icons_hover.png") -580px 82px no-repeat;
+      }
+    }
+  }
+  &__link {
+    width: 200px;
+    height: 200px;
+    border: 2px solid $main_color;
+    border-radius: 100px;
+  }
 }
