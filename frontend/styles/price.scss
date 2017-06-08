@@ -26,6 +26,7 @@
 }
 .price-list a {;
   color: #000000;
+  text-decoration: none;
 }
 .price-list__item {
   text-align: center;
@@ -33,14 +34,13 @@
   width: 33.3%;
   box-sizing: border-box;
   transition: all 0.3s;
-
-}
-.price-list__item-header {
 }
 .price-list__item-content {
   border-top: 2px solid #e6e6e6;
   background-color: #fafafa;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 .price-list__item:last-child {
   border-right: 0;
